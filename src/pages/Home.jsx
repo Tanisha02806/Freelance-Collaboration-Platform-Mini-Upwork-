@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { base44 } from "@/api/base44Client";
+import { base44 } from "@/api/api";
 import { motion } from "framer-motion";
 import { Search, Star, ArrowRight, Briefcase, Users, CheckCircle, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
