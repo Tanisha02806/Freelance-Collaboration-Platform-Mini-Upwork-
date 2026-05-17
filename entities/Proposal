@@ -1,0 +1,49 @@
+{
+  "name": "Proposal",
+  "type": "object",
+  "properties": {
+    "project_id": {
+      "type": "string"
+    },
+    "project_title": {
+      "type": "string"
+    },
+    "freelancer_id": {
+      "type": "string"
+    },
+    "freelancer_name": {
+      "type": "string"
+    },
+    "freelancer_avatar": {
+      "type": "string"
+    },
+    "cover_letter": {
+      "type": "string"
+    },
+    "bid_amount": {
+      "type": "number"
+    },
+    "delivery_days": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "accepted",
+        "rejected",
+        "withdrawn"
+      ],
+      "default": "pending"
+    },
+    "client_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "project_id",
+    "cover_letter",
+    "bid_amount",
+    "delivery_days"
+  ]
+}

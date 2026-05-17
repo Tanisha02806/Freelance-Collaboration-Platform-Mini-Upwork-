@@ -1,0 +1,82 @@
+{
+  "name": "FreelancerProfile",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string"
+    },
+    "user_email": {
+      "type": "string"
+    },
+    "display_name": {
+      "type": "string"
+    },
+    "avatar_url": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "description": "Professional title"
+    },
+    "bio": {
+      "type": "string"
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "hourly_rate": {
+      "type": "number"
+    },
+    "availability": {
+      "type": "string",
+      "enum": [
+        "available",
+        "busy",
+        "not_available"
+      ],
+      "default": "available"
+    },
+    "experience_years": {
+      "type": "number"
+    },
+    "portfolio_url": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "avg_rating": {
+      "type": "number",
+      "default": 0
+    },
+    "total_reviews": {
+      "type": "number",
+      "default": 0
+    },
+    "completed_projects": {
+      "type": "number",
+      "default": 0
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Web Development",
+        "Mobile Development",
+        "Design",
+        "Writing",
+        "Marketing",
+        "Data Science",
+        "DevOps",
+        "Other"
+      ]
+    }
+  },
+  "required": [
+    "display_name",
+    "title",
+    "bio"
+  ]
+}

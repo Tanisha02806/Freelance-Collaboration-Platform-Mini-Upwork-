@@ -1,0 +1,38 @@
+{
+  "name": "Review",
+  "type": "object",
+  "properties": {
+    "project_id": {
+      "type": "string"
+    },
+    "reviewer_id": {
+      "type": "string"
+    },
+    "reviewer_name": {
+      "type": "string"
+    },
+    "reviewee_id": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "number",
+      "description": "1-5 stars"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "reviewer_role": {
+      "type": "string",
+      "enum": [
+        "client",
+        "freelancer"
+      ]
+    }
+  },
+  "required": [
+    "project_id",
+    "reviewer_id",
+    "reviewee_id",
+    "rating"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "name": "Project",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Project title"
+    },
+    "description": {
+      "type": "string",
+      "description": "Detailed project description"
+    },
+    "budget_min": {
+      "type": "number",
+      "description": "Minimum budget"
+    },
+    "budget_max": {
+      "type": "number",
+      "description": "Maximum budget"
+    },
+    "deadline": {
+      "type": "string",
+      "format": "date",
+      "description": "Project deadline"
+    },
+    "skills_required": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Required skills"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Web Development",
+        "Mobile Development",
+        "Design",
+        "Writing",
+        "Marketing",
+        "Data Science",
+        "DevOps",
+        "Other"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "open",
+        "in_progress",
+        "completed",
+        "cancelled"
+      ],
+      "default": "open"
+    },
+    "client_id": {
+      "type": "string",
+      "description": "Client user ID"
+    },
+    "client_name": {
+      "type": "string"
+    },
+    "client_avatar": {
+      "type": "string"
+    },
+    "hired_freelancer_id": {
+      "type": "string"
+    },
+    "hired_freelancer_name": {
+      "type": "string"
+    },
+    "proposals_count": {
+      "type": "number",
+      "default": 0
+    },
+    "experience_level": {
+      "type": "string",
+      "enum": [
+        "Entry",
+        "Intermediate",
+        "Expert"
+      ],
+      "default": "Intermediate"
+    }
+  },
+  "required": [
+    "title",
+    "description",
+    "category"
+  ]
+}
